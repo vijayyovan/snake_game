@@ -39,6 +39,11 @@ while game_is_on:
 
     snake.move()
 
+# snake detects food
+    if snake.head.distance(food) < 15:
+        print("nom nom nom")
+        food.refresh()
+
 screen.exitonclick()
     # for seg in all_turtles:
     #     seg.forward(20)
